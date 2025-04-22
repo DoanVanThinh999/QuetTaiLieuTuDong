@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.util.DictionaryEntry" />
+
+        <variable
+            name="entry"
+            type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.util.DictionaryEntry" />
+
+        <variable
+            name="listeners"
+            type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.ui.dictionary.DictionaryListItem" />
+
+        <variable
+            name="isFavorited"
+            type="boolean" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/rounded_corner_30dp"
+            android:backgroundTint="@color/flashcard_front"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/flashcard_back_img_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:visibility="@{entry.img == null ? View.INVISIBLE : View.VISIBLE}"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/dictionary_item_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:scaleType="fitCenter"
+                    android:tag="@{entry.img}" />
+
+                <include
+                    android:id="@+id/dictionary_item_no_internet"
+                    layout="@layout/no_internet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dictionary_item_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@{entry.name}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textStyle="bold"
+                        tools:text="name" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/dictionary_item_ipa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@id/dictionary_item_speak"
+                            android:text="@{entry.ipa == null ? null : @string/ipa(entry.ipa)}"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            tools:text="ipa" />
+
+                        <ImageView
+                            android:id="@+id/dictionary_item_speak"
+                            android:layout_width="@dimen/icon_size_sm"
+                            android:layout_height="@dimen/icon_size_sm"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/speak"
+                            android:visibility="@{entry.sound == null ? View.GONE : View.VISIBLE}" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/dictionary_item_translation_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@android:color/transparent"
+                    tools:listitem="@layout/word_pos" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dictionary_item_fav_back"
+            android:layout_width="@dimen/icon_size_lg"
+            android:layout_height="@dimen/icon_size_lg"
+            android:layout_gravity="top|end"
+            android:onClick="@{listeners::toggleFavorite}"
+            android:padding="10dp"
+            android:src="@{isFavorited ? @drawable/heart_filled : @drawable/heart}"
+            tools:src="@drawable/heart" />
+    </FrameLayout>
+</layout>

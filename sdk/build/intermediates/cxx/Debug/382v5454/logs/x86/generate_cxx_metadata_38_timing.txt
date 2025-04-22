@@ -1,0 +1,79 @@
+# C/C++ build system timings
+generate_cxx_metadata
+  [gap of 18ms]
+  create-invalidation-state 72ms
+  [gap of 36ms]
+generate_cxx_metadata completed in 126ms
+
+# C/C++ build system timings
+generate_cxx_metadata
+  [gap of 114ms]
+  create-invalidation-state 64ms
+  [gap of 16ms]
+  write-metadata-json-to-file 15ms
+generate_cxx_metadata completed in 209ms
+
+# C/C++ build system timings
+generate_cxx_metadata
+  [gap of 13ms]
+  create-invalidation-state 78ms
+  [gap of 23ms]
+  write-metadata-json-to-file 10ms
+generate_cxx_metadata completed in 125ms
+
+# C/C++ build system timings
+generate_cxx_metadata 14ms
+
+# C/C++ build system timings
+generate_cxx_metadata
+  [gap of 16ms]
+  create-invalidation-state 148ms
+  [gap of 55ms]
+  write-metadata-json-to-file 10ms
+generate_cxx_metadata completed in 230ms
+
+# C/C++ build system timings
+generate_cxx_metadata
+  [gap of 13ms]
+  create-invalidation-state 51ms
+  [gap of 23ms]
+  write-metadata-json-to-file 12ms
+generate_cxx_metadata completed in 100ms
+
+# C/C++ build system timings
+generate_cxx_metadata
+  [gap of 16ms]
+  create-invalidation-state 55ms
+  [gap of 30ms]
+generate_cxx_metadata completed in 101ms
+
+# C/C++ build system timings
+generate_cxx_metadata
+  [gap of 17ms]
+  create-invalidation-state 47ms
+  [gap of 32ms]
+generate_cxx_metadata completed in 96ms
+
+# C/C++ build system timings
+generate_cxx_metadata
+  [gap of 10ms]
+  create-invalidation-state 48ms
+  [gap of 11ms]
+  write-metadata-json-to-file 16ms
+generate_cxx_metadata completed in 85ms
+
+# C/C++ build system timings
+generate_cxx_metadata
+  [gap of 51ms]
+  create-invalidation-state 231ms
+  [gap of 88ms]
+  write-metadata-json-to-file 58ms
+generate_cxx_metadata completed in 431ms
+
+# C/C++ build system timings
+generate_cxx_metadata
+  [gap of 15ms]
+  create-invalidation-state 64ms
+  [gap of 42ms]
+generate_cxx_metadata completed in 121ms
+

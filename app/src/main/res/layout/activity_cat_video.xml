@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Video Gốc -->
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="12dp"
+            android:background="#000000"
+            app:resize_mode="fit"
+            app:show_timeout="3000"
+            app:use_controller="true" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:max="100"
+            android:visibility="gone" />
+
+        <!-- Thông tin + Icon lưu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:background="#EEEEEE"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/tvVideoInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📽️ Độ dài video: 00 giây"
+                android:textColor="#212121"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSaveIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💾"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:paddingStart="12dp" />
+        </LinearLayout>
+
+        <!-- Nhập thời gian -->
+        <EditText
+            android:id="@+id/etStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="⏱ Thời gian bắt đầu (ví dụ: 00:00:05)"
+            android:inputType="text"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="⏱ Thời gian kết thúc (ví dụ: 00:00:15)"
+            android:inputType="text"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Xem trước đoạn cắt -->
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/playerViewXemLai"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="12dp"
+            android:background="#000000"
+            app:resize_mode="fit"
+            app:show_timeout="3000"
+            app:use_controller="true" />
+
+        <SeekBar
+            android:id="@+id/seekBarPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBarXemLaiDoanCat"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone" />
+
+        <!-- Nút chức năng -->
+        <Button
+            android:id="@+id/btnCatVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✂️ Cắt video"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnLuuVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💾 Lưu video"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnKhoiPhucDoanTruocDo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="↩️ Khôi phục đoạn trước đó"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

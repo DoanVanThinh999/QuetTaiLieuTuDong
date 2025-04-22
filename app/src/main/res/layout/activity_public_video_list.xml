@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPublicList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#4CAF50">
+
+    <!-- Tiêu đề trung tâm -->
+    <TextView
+        android:id="@+id/tvTieuDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📺 Hướng dẫn sử dụng"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Ảnh setting góc phải -->
+    <ImageView
+        android:id="@+id/imgSetting"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/settings"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp" />
+
+    <!-- Thanh chứa nút Thêm và Xoá -->
+    <LinearLayout
+        android:id="@+id/TieuDeXoaThem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTieuDe"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="4dp"
+        android:gravity="center_vertical">
+
+        <!-- Nút Thêm bên trái -->
+        <Button
+            android:id="@+id/btnThemVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="➕"
+            android:layout_gravity="start"
+            android:paddingHorizontal="12dp" />
+
+        <!-- View đệm chiếm khoảng trống ở giữa -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Icon Xoá nằm sát phải -->
+        <ImageView
+            android:id="@+id/imgXoa"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="Xoá"
+            android:src="@drawable/delete" />
+    </LinearLayout>
+
+
+
+    <!-- Danh sách video public -->
+    <ListView
+        android:id="@+id/listViewPublicVideos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/TieuDeXoaThem"
+        android:layout_above="@id/imgSachHDSD"
+        android:layout_marginTop="12dp"
+        android:dividerHeight="1dp"
+        android:background="#FAFAFA"
+        android:listSelector="@drawable/list_item_selector" />
+
+    <!-- Ảnh sách minh họa -->
+    <ImageView
+        android:id="@+id/imgSachHDSD"
+        android:layout_width="83dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="#FF5722"
+        android:alpha="0.2"
+        android:contentDescription="Sách minh họa"
+        android:src="@drawable/open_book" />
+</RelativeLayout>

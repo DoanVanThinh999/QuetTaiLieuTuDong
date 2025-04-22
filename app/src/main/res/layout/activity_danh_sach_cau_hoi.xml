@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3F51B5"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📋 Danh sách câu hỏi"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <!-- 🔍 Thanh tìm kiếm có icon kính lúp -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/search_background"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_search"
+            android:layout_gravity="center_vertical"
+            app:tint="#2196F3" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edtTimKiem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:hint="Tìm câu hỏi..."
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:completionThreshold="1" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewCauHoi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#009688"
+        android:dividerHeight="1dp"
+        android:background="#03A9F4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:id="@+id/btnCapNhatCauHoi"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="90dp"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="💾"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/imgThem"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Thêm câu hỏi"
+            android:padding="8dp"
+            android:layout_marginEnd="60dp"
+            android:src="@drawable/addplus" />
+        <ImageView
+            android:id="@+id/btnXoaCauHoiDaChon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Xoá nhiều câu hỏi"
+            android:padding="8dp"
+            android:src="@drawable/delete" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvSoLuongDaChon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📝 0 câu đã chọn"
+        android:textColor="#FF5722"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="start"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layoutChucNangXoaNhieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:visibility="gone"
+        android:layout_marginTop="4dp">
+
+        <Button
+            android:id="@+id/btnChonTatCa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✔️ Chọn tất cả"
+            android:layout_marginEnd="8dp"
+            android:textAllCaps="false"
+            android:backgroundTint="#607D8B"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnBoChonTatCa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="❌ Bỏ chọn tất cả"
+            android:textAllCaps="false"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.QuanLyTaiKhoanActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Quản lý tài khoản"
+            android:background="#3F51B5"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#FFEB3B"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtTimKiem"
+            android:hint="Tìm kiếm tài khoản..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnTimKiem"
+            android:text="Tìm kiếm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:padding="10dp" />
+
+        <ListView
+            android:id="@+id/lvTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnThemTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:padding="10dp"
+            android:text="Thêm tài khoản" />
+
+        <Button
+            android:id="@+id/btnXemLichSu"
+            android:text="Xem lịch sử"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:padding="10dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

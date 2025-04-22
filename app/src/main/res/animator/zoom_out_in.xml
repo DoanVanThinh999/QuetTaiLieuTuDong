@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <objectAnimator android:propertyName="scaleX"
+        android:valueFrom="1.0"
+        android:valueTo="@fraction/anim_zoom_factor"
+        android:duration="@integer/anim_flashcard_zoom_in_time"
+        android:interpolator="@android:anim/decelerate_interpolator" />
+
+    <objectAnimator android:propertyName="scaleY"
+        android:valueFrom="1.0"
+        android:valueTo="@fraction/anim_zoom_factor"
+        android:duration="@integer/anim_flashcard_zoom_in_time"
+        android:interpolator="@android:anim/decelerate_interpolator" />
+
+    <objectAnimator android:propertyName="scaleX"
+        android:valueFrom="@fraction/anim_zoom_factor"
+        android:valueTo="1.0"
+        android:duration="@integer/anim_flashcard_zoom_in_time"
+        android:startOffset="@integer/anim_flashcard_zoom_in_wait_time"
+        android:interpolator="@android:anim/decelerate_interpolator" />
+
+    <objectAnimator android:propertyName="scaleY"
+        android:valueFrom="@fraction/anim_zoom_factor"
+        android:valueTo="1"
+        android:duration="@integer/anim_flashcard_zoom_in_time"
+        android:startOffset="@integer/anim_flashcard_zoom_in_wait_time"
+        android:interpolator="@android:anim/decelerate_interpolator" />
+</set>

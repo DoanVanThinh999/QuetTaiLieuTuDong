@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="10dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp">
+
+        <include
+            android:id="@+id/game_indicator"
+            layout="@layout/game_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/game_missing_letters_text_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_indicator"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:text="@string/game_missing_letters_desc1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <FrameLayout
+            android:id="@+id/game_missing_letters_playground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/game_check"
+            android:layout_below="@id/game_missing_letters_text_desc"
+            android:background="@drawable/rounded_corner_15dp"
+            android:backgroundTint="@color/game_bg"
+            android:padding="10dp">
+
+            <GridLayout
+                android:id="@+id/game_missing_letters_letters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:columnCount="10" />
+        </FrameLayout>
+
+        <include
+            android:id="@+id/game_check"
+            layout="@layout/game_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</layout>

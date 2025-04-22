@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phienbanvip.TraTu.Tra_Nhieu_Tu">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="321dp"
+        android:layout_height="91dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2196F3"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tvTuTra"
+                    android:layout_width="297dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#EEEEEE"
+                    android:padding="9dp"
+                    android:text="Nhập đoạn cần tra"
+                    android:textColor="#3F51B5"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/btnPlayResult1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="0dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Play Input"
+                    android:src="@android:drawable/ic_media_play" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tvDoanDich"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#EEEEEE"
+                    android:padding="9dp"
+                    android:text="Kết quả dịch"
+                    android:textColor="#3F51B5"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/btnPlayResult"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="0dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Play Output"
+                    android:src="@android:drawable/ic_media_play" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

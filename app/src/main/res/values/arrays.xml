@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinner_list_view_type">
+        <item>Flashcard</item>
+        <item>Thu gọn</item>
+    </string-array>
+
+    <string-array name="spinner_filter_type">
+        <item>Tất cả</item>
+        <item>Yêu thích</item>
+        <item>Đã học</item>
+    </string-array>
+
+    <string-array name="spinner_dark_theme">
+        <item>Mặc định</item>
+        <item>Sáng</item>
+        <item>Tối</item>
+    </string-array>
+
+    <string-array name="game_correct_titles">
+        <item>Tuyệt vời!</item>
+        <item>Tuyệt!</item>
+        <item>Quá giỏi!</item>
+        <item>Chính xác!</item>
+    </string-array>
+    <string-array name="speed_options">
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>1.75x</item>
+        <item>2x</item>
+        <item>4x</item>
+    </string-array>
+    <string-array name="game_incorrect_titles">
+        <item>Không chính xác!</item>
+        <item>Sai rồi!</item>
+        <item>Sai bét rồi!</item>
+        <item>Không đúng!</item>
+        <item>Không đúng rồi!</item>
+    </string-array>
+</resources>

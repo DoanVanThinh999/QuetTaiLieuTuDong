@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/view_Ten"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#fafafa"
+        android:textSize="10pt"
+        android:textColor="#f900f0"
+        android:layout_height="wrap_content"
+         />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+    <TextView
+        android:id="@+id/txt_CauKD"
+        android:layout_width="match_parent"
+        android:textColor="#43baff"
+        android:layout_height="wrap_content"
+        android:text="1.Câu Khẳng định: " />
+    <TextView
+        android:id="@+id/view_CauKD"
+        android:layout_width="match_parent"
+        android:textStyle="normal"
+        android:layout_height="wrap_content"
+        android:text="Hiện câu khẳng định " />
+    <TextView
+        android:id="@+id/txt_CauPD"
+        android:layout_width="match_parent"
+        android:textColor="#43baff"
+        android:layout_height="wrap_content"
+        android:text="2.Câu Phủ định: " />
+    <TextView
+        android:id="@+id/view_CauPD"
+        android:layout_width="match_parent"
+        android:textStyle="normal"
+        android:layout_height="wrap_content"
+        android:text="Hiện câu phủ định " />
+    <TextView
+        android:id="@+id/txt_CauNV"
+        android:layout_width="match_parent"
+        android:textColor="#43baff"
+        android:layout_height="wrap_content"
+        android:text="3.Câu Nghi Vấn: " />
+    <TextView
+        android:id="@+id/view_CauNV"
+        android:layout_width="match_parent"
+        android:textStyle="normal"
+        android:layout_height="wrap_content"
+        android:text="Hiện Câu Nghi Vấn " />
+    <TextView
+        android:id="@+id/txt_CachDung"
+        android:layout_width="match_parent"
+        android:textColor="#43baff"
+        android:layout_height="wrap_content"
+        android:text="4.Cách dùng: " />
+    <TextView
+        android:id="@+id/view_CachDung"
+        android:layout_width="match_parent"
+        android:textStyle="normal"
+        android:layout_height="wrap_content"
+        android:text="Hiện cách dùng " />
+    <TextView
+        android:id="@+id/txt_ChuY"
+        android:layout_width="match_parent"
+        android:textColor="#43baff"
+        android:layout_height="wrap_content"
+        android:text="5.Chú Ý: " />
+    <TextView
+        android:id="@+id/view_ChuY"
+        android:layout_width="match_parent"
+        android:textStyle="normal"
+        android:layout_height="wrap_content"
+        android:text="Hiện chú ý " />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

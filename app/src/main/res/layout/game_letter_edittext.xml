@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textLetterEdit"
+    android:layout_width="@dimen/letter_view"
+    android:layout_height="@dimen/letter_view"
+    android:background="@drawable/rounded_corner_6dp"
+    android:backgroundTint="@color/game_letter_500"
+    android:fontFamily="serif-monospace"
+    android:gravity="center"
+    android:hint="_"
+    android:imeOptions="actionNext"
+    android:inputType="text|textNoSuggestions"
+    android:maxLength="2"
+    android:textColor="@color/game_letter_inputted_500"
+    android:textColorHint="@color/game_letter_hint_500"
+    android:textSize="@dimen/letter_view_text"
+    android:textStyle="bold" />

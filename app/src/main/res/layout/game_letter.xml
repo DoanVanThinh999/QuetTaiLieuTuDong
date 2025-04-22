@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textLetter"
+    android:layout_width="@dimen/letter_view"
+    android:layout_height="@dimen/letter_view"
+    android:background="@drawable/rounded_corner_6dp"
+    android:backgroundTint="@color/game_letter_500"
+    android:fontFamily="serif-monospace"
+    android:gravity="center"
+    android:text="A"
+    android:textColor="@color/white"
+    android:textSize="@dimen/letter_view_text"
+    android:textStyle="bold" />

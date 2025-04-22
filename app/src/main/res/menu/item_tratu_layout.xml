@@ -1,0 +1,20 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add_note"
+    android:icon="@drawable/addplus"
+    android:title="Thêm Ghi Chú"
+    app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/item_search"
+    android:icon="@drawable/ic_search_black_24dp"
+    android:title="search"
+    app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/item_doc"
+    android:icon="@drawable/volum"
+    android:title="doc"
+    app:showAsAction="ifRoom" />
+</menu>

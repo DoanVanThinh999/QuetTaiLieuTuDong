@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.ui.games.quiz.GameQuizViewModel" />
+
+        <variable
+            name="viewModel"
+            type="GameQuizViewModel" />
+
+        <variable
+            name="onCheckedChanged"
+            type="android.widget.CompoundButton.OnCheckedChangeListener" />
+    </data>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:button="@drawable/circle"
+            android:checked="@{viewModel.input == 0}"
+            android:enabled="@{!viewModel.showResult}"
+            android:onCheckedChanged="@{onCheckedChanged}"
+            android:padding="5dp"
+            android:tag="0"
+            android:text="@{viewModel.choices[0]}"
+            tools:checked="true"
+            tools:text="Hổ" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:button="@drawable/circle"
+            android:checked="@{viewModel.input == 1}"
+            android:enabled="@{!viewModel.showResult}"
+            android:onCheckedChanged="@{onCheckedChanged}"
+            android:padding="5dp"
+            android:tag="1"
+            android:text="@{viewModel.choices[1]}"
+            tools:text="Báo" />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:button="@drawable/circle"
+            android:checked="@{viewModel.input == 2}"
+            android:enabled="@{!viewModel.showResult}"
+            android:onCheckedChanged="@{onCheckedChanged}"
+            android:padding="5dp"
+            android:tag="2"
+            android:text="@{viewModel.choices[2]}"
+            tools:text="Cáo" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:button="@drawable/circle"
+            android:checked="@{viewModel.input == 3}"
+            android:enabled="@{!viewModel.showResult}"
+            android:onCheckedChanged="@{onCheckedChanged}"
+            android:padding="5dp"
+            android:tag="3"
+            android:text="@{viewModel.choices[3]}"
+            tools:text="Chồn" />
+    </GridLayout>
+</layout>

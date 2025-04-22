@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KẾT QUẢ XEM VIDEO"
+            android:gravity="center"
+            android:textColor="#4CAF50"
+            android:textSize="20sp"
+            android:layout_marginBottom="24dp"/>
+        <TextView
+            android:id="@+id/tvThongTinCauHinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cấu hình hiển thị ở đây"
+            android:textColor="#424242"
+            android:textSize="16sp"
+            android:gravity="start"
+            android:layout_marginBottom="24dp" />
+        <TextView
+            android:id="@+id/tvKetQua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kết quả hiển thị ở đây"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:layout_marginBottom="24dp" />
+        <Button
+            android:id="@+id/btnQuayLai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔁 Xem lại video"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <Button
+            android:id="@+id/btnThoat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚪 Thoát hướng dẫn sử dụng"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

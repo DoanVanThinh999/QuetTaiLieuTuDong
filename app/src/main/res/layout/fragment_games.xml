@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.games.GamesFragment">
+
+    <data>
+
+        <import type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.ui.games.GamesFragment" />
+
+        <variable
+            name="fragment"
+            type="GamesFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner_30dp"
+                        android:backgroundTint="@color/game"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:onClick="@{() -> fragment.startGame(GamesFragment.GAME_MISSING_LETTERS)}"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/game_missing_letters_desc"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/missing_letters" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:shadowColor="@android:color/black"
+                            android:shadowDx="0"
+                            android:shadowDy="5"
+                            android:shadowRadius="5"
+                            android:text="@string/game_missing_letters_title"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner_30dp"
+                        android:backgroundTint="@color/game"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:onClick="@{() -> fragment.startGame(GamesFragment.GAME_UNSCRAMBLE)}"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/game_unscramble_desc"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/unscramble" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:shadowColor="@android:color/black"
+                            android:shadowDx="0"
+                            android:shadowDy="5"
+                            android:shadowRadius="5"
+                            android:text="@string/game_unscramble_title"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner_30dp"
+                        android:backgroundTint="@color/game"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:onClick="@{() -> fragment.startGame(GamesFragment.GAME_QUIZ)}"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/game_quiz_desc"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/quiz" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:shadowColor="@android:color/black"
+                            android:shadowDx="0"
+                            android:shadowDy="5"
+                            android:shadowRadius="5"
+                            android:text="@string/game_quiz_title"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

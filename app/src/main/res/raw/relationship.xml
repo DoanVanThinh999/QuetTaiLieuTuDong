@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <quiz type="img" label="Con này trong tiếng Anh là gì?">
+        <item>grizzly</item>
+        <item>panda</item>
+        <item>dog</item>
+        <item>cat</item>
+        <item>mouse</item>
+        <item>cow</item>
+        <item>sheep</item>
+        <item>pig</item>
+        <item>monkey</item>
+        <item>horse</item>
+        <item>turtle</item>
+        <item>tortoise</item>
+        <item>donkey</item>
+        <item>elephant</item>
+        <item>hippo</item>
+        <item>fox</item>
+        <item>coyote</item>
+        <item>goat</item>
+        <item>tiger</item>
+        <item>lion</item>
+        <item>chicken</item>
+        <item>chick</item>
+        <item>buffalo</item>
+        <item>tuna</item>
+        <item>dolphin</item>
+        <item>shark</item>
+        <item>whale</item>
+        <item>duck</item>
+        <item>peacock</item>
+        <item>crab</item>
+        <item>shrimp</item>
+        <item>squid</item>
+        <item>octopus</item>
+        <item>catfish</item>
+        <item>clam</item>
+        <item>jellyfish</item>
+        <item>camel</item>
+        <item>pigeon</item>
+        <item>swan</item>
+        <item>stork</item>
+        <item>flamingo</item>
+    </quiz>
+
+    <quiz type="img" label="Hạt, đậu này trong tiếng Anh ghi sao?">
+        <item>soybean</item>
+        <item>pea</item>
+        <item>chickpea</item>
+        <item>green bean</item>
+        <item>mung bean</item>
+        <item>red mung bean</item>
+        <item>macadamia</item>
+        <item>walnut</item>
+        <item>cashew</item>
+        <item>peanut</item>
+        <item>almond</item>
+        <item>hazelnut</item>
+        <item>pistachio</item>
+    </quiz>
+
+    <quiz type="img" label="Đây là quả hay củ gì trong tiếng Anh?">
+        <item>banana</item>
+        <item>orange</item>
+        <item>apple</item>
+        <item>lemon</item>
+        <item>lime</item>
+        <item>durian</item>
+        <item>papaya</item>
+        <item>grape</item>
+        <item>grapefruit</item>
+        <item>apricot</item>
+        <item>plum</item>
+        <item>kiwi</item>
+        <item>peach</item>
+        <item>coconut</item>
+        <item>squash</item>
+        <item>beetroot</item>
+        <item>dragon fruit</item>
+        <item>tomato</item>
+        <item>mango</item>
+        <item>watermelon</item>
+        <item>muskmelon</item>
+        <item>chilli</item>
+        <item>pumpkin</item>
+        <item>blueberry</item>
+        <item>raspberry</item>
+        <item>strawberry</item>
+        <item>mulberry</item>
+        <item>carrot</item>
+        <item>potato</item>
+        <item>sweet potato</item>
+        <item>corn</item>
+        <item>chestnut</item>
+        <item>eggplant</item>
+        <item>onion</item>
+        <item>cucumber</item>
+        <item>avocado</item>
+        <item>cherry</item>
+        <item>bok choy</item>
+        <item>lettuce</item>
+        <item>broccoli</item>
+        <item>turnip</item>
+        <item>leek</item>
+        <item>garlic</item>
+        <item>cassava</item>
+        <item>arrowroot</item>
+        <item>jujube</item>
+        <item>cauliflower</item>
+        <item>guava</item>
+        <item>quince</item>
+        <item>okra</item>
+        <item>wasabi</item>
+        <item>pineapple</item>
+        <item>pomelo</item>
+        <item>truffle</item>
+        <item>rambutan</item>
+        <item>tamarind</item>
+        <item>mangosteen</item>
+        <item>calamansi</item>
+        <item>pomegranate</item>
+        <item>bitter gourd</item>
+    </quiz>
+
+    <quiz type="sound">
+        <item>close</item>
+        <item>cloth</item>
+        <item>clock</item>
+        <item>clause</item>
+        <item>clog</item>
+        <item>class</item>
+    </quiz>
+
+    <quiz type="sound">
+        <item>wear</item>
+        <item>week</item>
+        <item>weed</item>
+        <item>win</item>
+        <item>we</item>
+    </quiz>
+
+    <quiz type="sound">
+        <item>hard</item>
+        <item>heart</item>
+        <item>hot</item>
+        <item>hat</item>
+        <item>hurt</item>
+    </quiz>
+
+    <quiz type="sound">
+        <item>scissors</item>
+        <item>seizure</item>
+        <item>sister</item>
+        <item>sitter</item>
+        <item>leisure</item>
+        <item>censor</item>
+        <item>censure</item>
+        <item>see-saw</item>
+    </quiz>
+
+    <quiz type="sound">
+        <item>bread</item>
+        <item>breed</item>
+        <item>bed</item>
+        <item>bad</item>
+        <item>red</item>
+        <item>dread</item>
+        <item>dead</item>
+    </quiz>
+
+    <quiz type="sound">
+        <item>loaf</item>
+        <item>love</item>
+        <item>slope</item>
+        <item>lope</item>
+        <item>flow</item>
+        <item>load</item>
+    </quiz>
+
+    <quiz type="sound">
+        <item>honor</item>
+        <item>odor</item>
+        <item>order</item>
+        <item>other</item>
+        <item>honey</item>
+        <item>hornet</item>
+        <item>corner</item>
+    </quiz>
+
+    <quiz type="sound">
+        <item>shop</item>
+        <item>shot</item>
+        <item>sock</item>
+        <item>short</item>
+        <item>sharp</item>
+    </quiz>
+
+    <quiz type="synonym" pos="a" for="phức tạp">
+        <item>hard</item>
+        <item>difficult</item>
+        <item>uneasy</item>
+        <item>tough</item>
+        <item>impossible</item>
+        <item>intractable</item>
+        <item>bewildering</item>
+        <item>complex</item>
+        <item>intricate</item>
+    </quiz>
+
+    <quiz type="synonym" pos="a" for="bình thường">
+        <item>moderate</item>
+        <item>average</item>
+        <item>normal</item>
+        <item>medium</item>
+        <item>indifferent</item>
+        <item>ordinary</item>
+    </quiz>
+
+    <quiz type="synonym" pos="v" for="nói">
+        <item>say</item>
+        <item>tell</item>
+        <item>speak</item>
+        <item>express</item>
+        <item>utter</item>
+        <item>voice</item>
+        <item>communicate</item>
+    </quiz>
+
+    <quiz type="synonym" pos="a" for="thông minh">
+        <item>intelligent</item>
+        <item>smart</item>
+        <item>clever</item>
+        <item>wise</item>
+        <item>brilliant</item>
+        <item>skilled</item>
+        <item>skillful</item>
+        <item>talented</item>
+        <item>excellent</item>
+        <item>knowledgeable</item>
+    </quiz>
+
+    <quiz type="synonym" pos="v" for="trộn">
+        <item>mix</item>
+        <item>merge</item>
+        <item>blend</item>
+        <item>combine</item>
+        <item>couple</item>
+        <item>unify</item>
+    </quiz>
+
+    <quiz type="synonym" pos="v" for="tham gia">
+        <item>attend</item>
+        <item>join</item>
+        <item>participate</item>
+        <item>enter</item>
+    </quiz>
+</resources>

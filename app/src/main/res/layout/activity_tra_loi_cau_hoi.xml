@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="#03A9F4"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#FFEB3B"
+            android:background="#9C27B0"
+            android:text="Thao tác 2 lần để nhận đáp án"/>
+        <TextView
+            android:id="@+id/tvCauHoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Câu hỏi"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="#FFF8E1"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutQuizContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnTraLoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trả lời"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#1E88E5"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/tvThongBao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#D32F2F"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

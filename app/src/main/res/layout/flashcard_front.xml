@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="entry"
+            type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.util.DictionaryEntry" />
+
+        <variable
+            name="listeners"
+            type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.ui.dictionary.DictionaryListItem" />
+
+        <variable
+            name="isFavorited"
+            type="boolean" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_corner_30dp"
+        android:backgroundTint="@color/flashcard_front"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dictionary_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@{entry.name}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textStyle="bold"
+            tools:text="name" />
+
+        <ImageView
+            android:id="@+id/dictionary_item_fav_front"
+            android:layout_width="@dimen/icon_size_lg"
+            android:layout_height="@dimen/icon_size_lg"
+            android:layout_gravity="top|end"
+            android:onClick="@{listeners::toggleFavorite}"
+            android:padding="10dp"
+            android:src="@{isFavorited ? @drawable/heart_filled : @drawable/heart}"
+            tools:src="@drawable/heart" />
+    </FrameLayout>
+</layout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvSoLanXem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số lần làm cho phép: ..."
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvDaLam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số lần bạn đã làm: ..."
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvPhuongThucDiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phương thức tính điểm: ..."
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvDiemLuu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Điểm đã được lưu: ..."
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnBatDau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bắt đầu"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_dark" />
+    </LinearLayout>
+</ScrollView>

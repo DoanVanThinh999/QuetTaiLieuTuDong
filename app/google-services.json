@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "529986251072",
+    "firebase_url": "https://my-project-a4597-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "my-project-a4597",
+    "storage_bucket": "my-project-a4597.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529986251072:android:fd58bce8604851282332a5",
+        "android_client_info": {
+          "package_name": "com.example.bai_tap_lon_thi_cuoi_ky_de_9"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQoA2Ggg-n8istofbOqlANGPw-6z1Jh8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

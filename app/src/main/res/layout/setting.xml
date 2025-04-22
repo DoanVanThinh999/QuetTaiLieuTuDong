@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5pt">
+    <Button
+        android:id="@+id/btxoatratu"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa Tất Cả Lịch Sử Tra Từ"
+        android:textAllCaps="false"
+        android:background="#ffffff"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5pt">
+    <Button
+        android:id="@+id/btxoaTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Xóa Tất Cả Lịch Sử Test"
+        android:background="#ffffff"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:text="Thông tin ứng dụng" />
+    <TextView
+        android:id="@+id/tvThongtin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:text="Thông tin ứng dụng" />
+</LinearLayout>

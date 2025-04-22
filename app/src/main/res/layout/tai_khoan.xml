@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#FFEB3B">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tvMaVaTenDN"
+                android:text="Mã và tên đăng nhập"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvHoTen"
+                android:text="Họ và tên"
+                android:textStyle="bold"
+                android:textColor="#E91E63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvVaiTro"
+                android:text="Vai trò"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="#4CAF50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imgSuaTaiKhoan"
+            android:src="@drawable/edit_user"
+            android:layout_width="55dp"
+            android:layout_height="55dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

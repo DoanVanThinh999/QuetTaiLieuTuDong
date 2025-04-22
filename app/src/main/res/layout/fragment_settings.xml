@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <data>
+
+        <import type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.util.Settings" />
+
+        <variable
+            name="maxHearts"
+            type="int" />
+
+        <variable
+            name="maxProgress"
+            type="int" />
+
+        <variable
+            name="settings"
+            type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.util.Settings" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1"
+            android:stretchColumns="1,2">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:text="@string/setting_category_user"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/header" />
+        </TableRow>
+
+        <TableRow
+            android:paddingVertical="5dp"
+            android:gravity="center|start">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_sm"
+                android:layout_height="@dimen/icon_size_sm"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/bookmark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="@string/setting_learned_words"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <FrameLayout android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/setting_open_learned_words"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/book" />
+            </FrameLayout>
+        </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:paddingTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/setting_category_design"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/header" />
+            </TableRow>
+
+            <TableRow
+                android:paddingVertical="5dp"
+                android:gravity="center|start">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_sm"
+                    android:layout_height="@dimen/icon_size_sm"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/list" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/dictionary_view_type"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <FrameLayout android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/setting_list_view_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/spinner_list_view_type"
+                        android:tag="@{Settings.SETTING_LIST_VIEW_TYPE}" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:paddingTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/setting_category_game"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/header" />
+            </TableRow>
+
+            <TableRow
+                android:paddingVertical="5dp"
+                android:gravity="center|start">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_sm"
+                    android:layout_height="@dimen/icon_size_sm"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/speak"
+                    app:tint="?attr/colorControlNormal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/setting_in_game_sound_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <FrameLayout android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/setting_in_game_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="@{settings.getInGameSound()}"
+                        android:onCheckedChanged="@{(switch, b) -> settings.setInGameSound(b)}"
+                        android:tag="@{Settings.SETTING_IN_GAME_SOUND}" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:paddingVertical="5dp"
+                android:gravity="center|start">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_sm"
+                    android:layout_height="@dimen/icon_size_sm"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/heart"
+                    app:tint="?attr/colorControlNormal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/setting_max_hearts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <SeekBar
+                        android:id="@+id/setting_max_hearts"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:max="@{10 - 1}"
+                        android:progress="@{settings.getMaxHearts() - 1}"
+                        android:tag="@{Settings.SETTING_MAX_HEARTS + `,1,1`}" />
+
+                    <TextView
+                        android:id="@+id/setting_hearts_max_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{String.valueOf(maxHearts)}"
+                        tools:text="5" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:paddingVertical="5dp"
+                android:gravity="center|start">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_sm"
+                    android:layout_height="@dimen/icon_size_sm"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/check"
+                    app:tint="?attr/colorControlNormal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/setting_max_progress"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <SeekBar
+                        android:id="@+id/setting_max_progress"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:max="@{(30 - 5) / 5}"
+                        android:progress="@{(settings.getMaxProgress() - 5) / 5}"
+                        android:tag="@{Settings.SETTING_MAX_PROGRESS + `,5,5`}" />
+
+                    <TextView
+                        android:id="@+id/setting_progress_max_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{String.valueOf(maxProgress)}"
+                        tools:text="10" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:paddingTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/setting_category_notification"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/header" />
+            </TableRow>
+
+            <TableRow
+                android:paddingVertical="5dp"
+                android:gravity="center|start">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_sm"
+                    android:layout_height="@dimen/icon_size_sm"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/notification" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/setting_vocab_notification_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/setting_vocab_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:checked="@{settings.getVocabNotification()}"
+                        android:onCheckedChanged="@{(switch, b) -> settings.setVocabNotification(b)}"
+                        android:tag="@{Settings.SETTING_VOCAB_NOTIFICATION}" />
+
+                    <ImageButton
+                        android:id="@+id/setting_vocab_test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/notification" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:paddingTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/setting_category_default"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/header" />
+            </TableRow>
+
+            <TableRow
+                android:paddingVertical="5dp"
+                android:gravity="center|start">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_sm"
+                    android:layout_height="@dimen/icon_size_sm"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/loading"
+                    app:tint="?attr/colorControlNormal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/setting_reset_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <FrameLayout android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/setting_default"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/game_incorrect_500"
+                        android:src="@drawable/loading"
+                        app:tint="@android:color/black" />
+                </FrameLayout>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</layout>

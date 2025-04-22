@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/videoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:resize_mode="fit"
+        app:show_timeout="0"
+        app:use_controller="true">
+
+        <androidx.media3.ui.PlayerControlView
+            android:id="@id/exo_controller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.bai_tap_lon_thi_cuoi_ky_de_9.phienbanvip.ui.PersistentMarkerTimeBar
+                android:id="@id/exo_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </androidx.media3.ui.PlayerControlView>
+
+    </androidx.media3.ui.PlayerView>
+
+</FrameLayout>

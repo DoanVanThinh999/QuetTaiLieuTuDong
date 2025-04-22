@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phienbanvip.TraTu.GoCapTocNhanhBanPhimActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:padding="10dp"
+            android:text="Gõ chữ nhanh"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Xin chào -->
+        <TextView
+            android:id="@+id/tvTaiKhoanKH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xin chào, ..."
+            android:textColor="#E91E63"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <!-- Chọn giờ/phút/giây -->
+        <LinearLayout
+            android:id="@+id/timePickerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <EditText
+                android:id="@+id/etHours"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="Giờ"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <EditText
+                android:id="@+id/etMinutes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:hint="Phút"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <EditText
+                android:id="@+id/etSeconds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:hint="Giây"
+                android:inputType="number"
+                android:maxLength="2" />
+        </LinearLayout>
+
+        <!-- Đồng hồ đếm ngược -->
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời gian còn lại: 00:00:00"
+            android:textColor="#F44336"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+        <com.example.bai_tap_lon_thi_cuoi_ky_de_9.phienbanvip.TraTu.CustomScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Câu hỏi -->
+                <EditText
+                    android:id="@+id/tvCauHoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="141dp"
+                    android:background="#F0F0F0"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:maxLines="10"
+                    android:overScrollMode="always"
+                    android:padding="8dp"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+        </com.example.bai_tap_lon_thi_cuoi_ky_de_9.phienbanvip.TraTu.CustomScrollView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:fillViewport="true">
+                <!-- Người dùng nhập -->
+                <EditText
+                    android:id="@+id/etUserInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="153dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#EEEEEE"
+                    android:scrollbars="vertical"
+                    android:hint="Gõ câu trả lời tại đây"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textColor="#3F51B5"
+                    android:textSize="16sp" />
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <!-- Nút bắt đầu -->
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bắt đầu"
+            android:background="#4CAF50"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="start" />
+
+        <!-- Nút thử lại -->
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thử lại"
+            android:background="#FF9800"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end" />
+
+        <!-- Phân tích -->
+        <TextView
+            android:id="@+id/tvPhanTich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kết quả sẽ hiển thị tại đây..."
+            android:textColor="#FF5722"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:background="#FAFAFA"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

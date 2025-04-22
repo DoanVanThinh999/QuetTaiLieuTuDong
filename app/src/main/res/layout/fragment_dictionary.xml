@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.dictionary.DictionaryFragment">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="showFavoriteGuide"
+            type="boolean" />
+
+        <variable
+            name="filterMode"
+            type="int" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|end"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5dp">
+
+            <SearchView
+                android:id="@+id/txt_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:queryHint="@string/dictionary_search_hint">
+
+
+            </SearchView>
+
+            <ImageView
+                android:id="@+id/explore_word"
+                android:layout_width="?attr/minTouchTargetSize"
+                android:layout_height="?attr/minTouchTargetSize"
+                android:padding="4dp"
+                android:src="@drawable/explore" />
+
+            <Spinner
+                android:id="@+id/list_view_type_spinner"
+                android:layout_width="?attr/minTouchTargetSize"
+                android:layout_height="?attr/minTouchTargetSize"
+                android:background="@drawable/list"
+                android:prompt="@string/dictionary_view_type" />
+
+            <Spinner
+                android:id="@+id/filter_type_spinner"
+                android:layout_width="?attr/minTouchTargetSize"
+                android:layout_height="?attr/minTouchTargetSize"
+                android:layout_marginHorizontal="6dp"
+                android:background="@{filterMode == 0 ? @drawable/filter_off : @drawable/filter}"
+                android:prompt="@string/dictionary_filter"
+                tools:background="@drawable/filter" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:id="@+id/lstDictionary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:verticalSpacing="10dp"
+                tools:listitem="@layout/flashcard" />
+
+            <LinearLayout
+                android:id="@+id/lay_fav_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="@{showFavoriteGuide ? View.VISIBLE : View.GONE}">
+
+                <TextView
+                    android:id="@+id/text_fav_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bấm vào biểu tượng"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtIconText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="thích (biểu tượng "
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/iconFav1"
+                        android:layout_width="@dimen/icon_size_sm"
+                        android:layout_height="@dimen/icon_size_sm"
+                        android:src="@drawable/heart" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=")"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="để từ đó xuất hiện tại đây"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name" translatable="false">Bai_tap_lon_thi_cuoi_ky_de_9</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="Listening">Đề thi listening</string>
+    <string name="Speaking">Đề thi speaking</string>
+    <string name="Reading">Đề thi reading</string>
+    <string name="Writing">Đề thi writing</string>
+
+    <string name="title_home">Từ điển</string>
+    <string name="title_dashboard">Các từ đã thích</string>
+    <string name="title_games">Game</string>
+    <string name="title_settings">Tuỳ chỉnh</string>
+    <string name="a_slash_b" formatted="true">%d / %d</string>
+    <string name="ipa" formatted="true">/%s/</string>
+    <string name="dictionary_search_hint">Nhập từ cần tìm</string>
+    <string name="dictionary_view_type">Kiểu bố trí từ vựng</string>
+    <string name="dictionary_filter">Lọc từ vựng</string>
+    <string name="dictionary_word_type_n">danh từ</string>
+    <string name="dictionary_word_type_v">động từ</string>
+    <string name="dictionary_word_type_a">tính từ</string>
+    <string name="dictionary_word_type_adv">trạng từ</string>
+    <string name="dictionary_word_type_prep">giới từ</string>
+    <string name="dictionary_word_type_inj">thán từ</string>
+    <string name="img_no_internet">Không có kết nối internet</string>
+    <string name="sound_no_internet">Không thể tải âm thanh.\nThử kiểm tra lại kết nối mạng của bạn.</string>
+    <string name="notification_new_word_title" formatted="true">Từ mới: %s</string>
+    <string name="notification_old_word_title" formatted="true">Ôn lại từ cũ: %s</string>
+    <!-- Game -->
+    <string name="game_unscramble_title">Sắp xếp chữ</string>
+    <string name="game_unscramble_desc">Chơi Sắp xếp chữ</string>
+    <string name="game_unscramble_desc1">Sắp xếp các chữ để tạo thành một từ có nghĩa bằng cách bấm vào cặp chữ để đổi chỗ với nhau.</string>
+    <string name="game_quiz_title">Trắc nghiệm</string>
+    <string name="game_quiz_desc">Chơi Trắc nghiệm</string>
+    <string name="game_quiz_desc1">Bấm vào các câu trả lời bên dưới để trả lời cho câu hỏi hiện tại.</string>
+    <string name="game_word_search_title">Tìm từ</string>
+    <string name="game_word_search_desc">Chơi Tìm từ</string>
+    <string name="game_missing_letters_title">Đoán chữ</string>
+    <string name="game_missing_letters_desc">Chơi Đoán chữ</string>
+    <string name="game_missing_letters_desc1">Điền vào một số chữ còn thiếu để tạo thành một từ có nghĩa.</string>
+    <string name="game_portrait_recommended">Xoay dọc màn hình để có trải nghiệm chơi tốt nhất.</string>
+    <string name="game_finished_success_title">Màn chơi hoàn thành</string>
+    <string name="game_finished_failure_title">Màn chơi thất bại</string>
+    <string name="game_finished_success_text">Chúc mừng bạn đã\nhoàn thành màn chơi!</string>
+    <string name="game_finished_failure_text">Rất tiếc! Bạn đã không\nqua được màn chơi này.</string>
+    <string name="game_check_title">Kiểm tra</string>
+    <string name="game_correct_text">Dịch nghĩa:</string>
+    <string name="game_incorrect_text">Câu trả lời:</string>
+    <string name="game_correct_continue">Tiếp tục</string>
+    <string name="game_incorrect_continue">Đã hiểu</string>
+    <string name="game_quiz_sound_desc">Bạn nghe được từ nào qua đoạn âm thanh này?</string>
+    <string name="game_quiz_no_internet_title">@string/img_no_internet</string>
+    <string name="game_quiz_no_internet_text">Màn này cần phải có mạng internet để hiện hình ảnh và âm thanh.</string>
+    <string name="game_quiz_no_internet_retry">Thử kết nối lại</string>
+    <string name="game_quiz_no_internet_ignore">Ra từ khác</string>
+    <string name="game_quiz_no_internet_abort">Huỷ game</string>
+    <string name="game_learned_words_not_enough_title">Không đủ vốn từ</string>
+    <string name="game_learned_words_not_enough_desc" formatted="true">Bạn cần phải học được khoảng tầm %d từ để chơi game này.\nHiện tại bạn đã học được %d từ.</string>
+    <string name="game_learned_words_not_enough_desc_unknown">Bạn cần phải học thêm vài từ nữa để chơi game này.</string>
+    <string name="game_time">Thời gian</string>
+    <string name="game_hearts">Số tim</string>
+    <string name="game_progress">Số câu trả lời đúng</string>
+    <string name="game_hearts_full">HOÀN HẢO!</string>
+    <string name="game_progress_full">HOÀN THÀNH!</string>
+    <string name="game_leave_title">Rời game?</string>
+    <string name="game_leave_text">Bạn có muốn rời game?</string>
+    <string name="game_leave_yes">Rời đi</string>
+    <string name="game_leave_no">Thôi</string>
+    <!-- Settings -->
+    <string name="setting_category_user">Người dùng</string>
+    <string name="setting_category_design">Thiết kế</string>
+    <string name="setting_category_game">Game</string>
+    <string name="setting_category_notification">Thông báo</string>
+    <string name="setting_category_default">Mặc định</string>
+    <string name="setting_language_title">Ngôn ngữ</string>
+    <string name="setting_learned_words">Các từ đã học</string>
+    <string name="setting_learned_words_desc" formatted="true">Bấm vào một từ nào đó để cho ứng dụng biết là từ đó bạn đã học.\nTừ đã học được hiển thị với màu nền xanh lá.\nSố lượng từ đã học: %d từ.</string>
+    <string name="setting_max_hearts">Số tim có sẵn</string>
+    <string name="setting_max_progress">Số câu hỏi\nmỗi màn chơi</string>
+    <string name="setting_in_game_sound_title">Âm thanh game</string>
+    <string name="setting_vocab_notification_title">Nhắc nhở từ vựng mỗi ngày</string>
+    <string name="setting_reset_title">Đặt về mặc định</string>
+    <string name="setting_reset_text">Bạn có chắc chắn muốn đặt về mặc định không?\nApp này sẽ tự động chạy lại khi đặt về mặc định xong.</string>
+    <string name="setting_reset_yes">Chắc chắn</string>
+    <string name="setting_reset_no">Thôi</string>
+    <string name="ok">OK</string>
+    <string name="explore_word">Khám phá từ mới</string>
+    <string name="learned_all">Bạn đã học hết từ.</string>
+    <string name="dictionary_explore_word_select_filter_none">Chọn vào Tất cả (trong biểu tượng cái phễu)</string>
+    <string name="action_search" />
+    <string name="title_activity_main222222">MainActivity222222</string>
+
+
+    <string name="thong_tin_video">Thông tin video</string>
+    <string name="hint_thoi_gian_bat_dau">⏱️ Nhập thời gian bắt đầu (ví dụ: 00:00:05)</string>
+    <string name="hint_thoi_gian_ket_thuc">⏱️ Nhập thời gian kết thúc (ví dụ: 00:00:15)</string>
+
+</resources>

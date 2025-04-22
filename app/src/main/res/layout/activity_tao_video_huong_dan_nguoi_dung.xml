@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="12dp"
+    tools:context=".phienbanvip.ui.TaoVideoHuongDanNguoiDungActivity">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎬 Tạo video"
+        android:textSize="20sp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Nút chọn video -->
+    <Button
+        android:id="@+id/btnChonVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn video từ thiết bị"
+        android:drawableLeft="@android:drawable/ic_menu_upload"
+        android:drawablePadding="8dp"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+
+    <!-- PlayerView + Fullscreen Button -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000">
+
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:use_controller="true"
+            app:resize_mode="fit"
+            app:show_timeout="3000" />
+        <ImageButton
+            android:id="@+id/btnFullscreen"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="12dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_fullscreen_exit_24"
+            android:contentDescription="Phóng to / Thu nhỏ" />
+    </FrameLayout>
+    <Button
+        android:id="@+id/btnSuaVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa video"/>
+</LinearLayout>

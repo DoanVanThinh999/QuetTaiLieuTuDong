@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\Admin\Documents\A_oi_e_muon_ho_tro_phan_AI_a\Bai_tap_lon_thi_cuoi_ky_de_9 (1) 2\sdk\.cxx\Debug\382v5454\armeabi-v7a'
+ninja: no work to do.

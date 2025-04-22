@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true"
+        android:requiredFeature="true" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bai_tap_lon_thi_cuoi_ky_de_9"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".phienbanvip.ui.PublicVideoListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.ui.PublicVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.ui.ManHinhKetThucActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.ui.TraLoiCauHoiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.ui.TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.ui.CaiDatXemVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.ui.DanhSachCauHoiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.ui.ChenVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.ui.CatVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.ui.ChonLoaiCauHoiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.ui.NhapCauHoiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.ui.MarkerView"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".phienbanvip.ui.ChinhSuaVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.ui.TaoVideoHuongDanNguoiDungActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".phienbanvip.ui.EditActivity" />
+        <activity
+            android:name=".phienbanvip.ui.PdfExporter"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".phienbanvip.ui.ScanProcessor"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".phienbanvip.ui.PreviewActivity" />
+        <activity android:name=".phienbanvip.ui.ScannedDocViewerActivity" />
+        <activity
+            android:name=".phienbanvip.QuetTaiLieuTuDongSuDungActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.MainActivity222222"
+            android:exported="false"
+            android:label="@string/title_activity_main222222"
+            android:theme="@style/Theme.Bai_tap_lon_thi_cuoi_ky_de_9.NoActionBar" />
+        <activity
+            android:name=".phienbanvip.LuyenNgheChiTietDoanHoiThoaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.TraTu.LuyenNgheChiTietActivity"
+            android:exported="false" />
+        <activity android:name=".phienbanvip.TTSVoiceSelectionActivity" />
+        <activity
+            android:name=".phienbanvip.TraTu.GoCapTocNhanhBanPhimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.TraTu.LuyenNgheChepChinhTaActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.LuyenPhatAmThiNghiemTichHopGemmiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".phienbanvip.TraTu.Tra_Nhieu_Tu"
+            android:exported="false" />
+        <activity
+            android:name="com.SuaLienHeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.DanhBaActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ThemLienHeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.LuyenPhatAmThiNghiemActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ChiTietThongTinTaiKhoanActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.LuyenPhatAmActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.phat_am"
+            android:exported="false" />
+        <activity
+            android:name="com.ChupAnhActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.LichSuActivity"
+            android:exported="false" />
+        <activity android:name=".phienbanvip.ui.TracNghiemTuVideoActivity" />
+        <activity
+            android:name="com.QuanLyTaiKhoanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hoctienganh.MainTiengAnhActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DangKyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.bai_tap_lon_thi_cuoi_ky_de_9.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver
+            android:name=".hoctienganh.app1.VocabNotifier"
+            android:exported="true" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".hoctienganh.app1.ui.games.missingletters.GameMissingLetters"
+            android:exported="true"
+            android:label="@string/game_missing_letters_title">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".hoctienganh.app1.ui.games.quiz.GameQuiz"
+            android:exported="true"
+            android:label="@string/game_quiz_title">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".hoctienganh.app1.ui.games.unscramble.GameUnscramble"
+            android:exported="true"
+            android:label="@string/game_unscramble_title">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".phienbanvip.Note.edtNote"
+            android:parentActivityName=".phienbanvip.Note.MainNote"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".phienbanvip.LichSuTest.LichSuHien" /> <!--  -->
+        <activity
+            android:name=".phienbanvip.Note.MainNote"
+            android:parentActivityName=".phienbanvip.EnglishMain"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" /> <!--  -->
+        <activity
+            android:name=".phienbanvip.TraTu.Search_tran"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".phienbanvip.TraTu.TraTu"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" /> <!-- Ngu Phap -->
+        <activity
+            android:name=".phienbanvip.NguPhap.Main_NguPhap"
+            android:parentActivityName=".phienbanvip.EnglishMain"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".phienbanvip.NguPhap.View_NguPhap"
+            android:parentActivityName=".phienbanvip.NguPhap.Main_NguPhap"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" /> <!-- Question -->
+        <activity
+            android:name=".phienbanvip.Question.Main_Question"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- LichSuTest -->
+        <activity
+            android:name=".phienbanvip.LichSuTest.LichSuTest"
+            android:parentActivityName=".phienbanvip.EnglishMain"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".phienbanvip.EnglishMain"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".phienbanvip.TraTu.TichDoanVanHoiThoai" />
+    </application>
+
+</manifest>

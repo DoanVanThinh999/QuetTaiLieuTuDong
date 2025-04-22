@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E8F5E9"
+    android:padding="16dp"
+    tools:context=".phienbanvip.QuetTaiLieuTuDongSuDungActivity">
+
+    <!-- Header: Logout - Title - History -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <!-- Logout icon -->
+        <ImageView
+            android:id="@+id/imgLogout"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/dang_xuat"
+            android:contentDescription="Đăng xuất" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ứng dụng Quét Tài Liệu"
+            android:textColor="#2E7D32"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- History icon -->
+        <ImageView
+            android:id="@+id/imgXemLSLuuAnh"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/baseline_image_search_24"
+            android:contentDescription="Xem lịch sử" />
+    </LinearLayout>
+
+    <!-- Ảnh hiển thị -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="#DDDDDD"
+        android:contentDescription="Ảnh đã chọn hoặc đã quét"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nút chức năng -->
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#3949AB"
+        android:text="📁 Chọn ảnh từ thư viện"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#0288D1"
+        android:text="🔍 Quét tài liệu"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#F06292"
+        android:text="🛠️ Chỉnh sửa ảnh"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnHDSD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="📄 Hướng dẫn sử dụng"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

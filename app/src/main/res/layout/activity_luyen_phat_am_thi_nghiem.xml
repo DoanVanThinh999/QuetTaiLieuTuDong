@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.LuyenPhatAmThiNghiemActivity">
+
+    <!-- Thanh tiêu đề -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:padding="10dp"
+        android:text="Speech to Text Practice"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tên người dùng -->
+    <TextView
+        android:id="@+id/tvTaiKhoanKH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xin chào, ..."
+        android:textColor="#E91E63"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Đồng hồ đếm ngược -->
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời gian còn lại: 30 giây"
+        android:textColor="#F44336"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvTaiKhoanKH"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Câu hỏi -->
+    <TextView
+        android:id="@+id/tvCauHoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Câu hỏi: What kinds of activities do you often do in your spare time?"
+        android:textColor="#9C27B0"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTimer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nội dung nhập từ giọng nói -->
+
+    <!-- Nút mic -->
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="373dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCauHoi">
+
+        <TextView
+            android:id="@+id/edtNoiDung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:padding="5dp"
+            android:text="Nhấn nút mic để nhập giọng nói..."
+            android:textColor="#3F51B5"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="52dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/baseline_mic_24"
+        android:contentDescription="Mic Button"
+        android:src="@drawable/baseline_mic_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView3" />
+
+    <!-- Nút nộp bài -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nộp bài"
+        android:background="#FF5722"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSpeak"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Phân tích câu trả lời -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fillViewport="true"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvPhanTich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phân tích câu trả lời sẽ hiển thị tại đây."
+            android:textSize="14sp"
+            android:textColor="#FF5722"
+            android:padding="8dp"
+            android:background="#FAFAFA" />
+    </ScrollView>
+
+    <!-- Điểm số -->
+    <TextView
+        android:id="@+id/tvDiemSo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Điểm IELTS: "
+        android:textSize="16sp"
+        android:textColor="#4CAF50"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/scrollView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

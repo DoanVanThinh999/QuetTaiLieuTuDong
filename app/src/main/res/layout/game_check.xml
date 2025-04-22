@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.ui.games.GameViewModel" />
+        <import type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.ui.games.GameManager" />
+
+        <variable
+            name="self"
+            type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.ui.games.GameManager" />
+
+        <variable
+            name="viewModel"
+            type="GameViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/game_btn_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:enabled="@{!viewModel.showResult &amp;&amp; viewModel.checkEnabled}"
+            android:backgroundTint="@color/game_correct_button"
+            android:onClick="@{self::check}"
+            android:text="@string/game_check_title"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/layCorrect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:visibility="@{viewModel.showResult ? View.VISIBLE : View.INVISIBLE}">
+
+            <TextView
+                android:id="@+id/checkTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.checkTitle}"
+                tools:text="Tuyệt vời!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@{viewModel.isCorrect ? @color/game_correct_500 : @color/game_incorrect_500}"
+                android:textStyle="bold"
+                tools:textColor="@color/game_correct_500" />
+
+            <TextView
+                android:id="@+id/checkTransTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.isCorrect ? @string/game_correct_text : @string/game_incorrect_text}"
+                android:textStyle="bold"
+                tools:text="@string/game_correct_text" />
+
+            <TextView
+                android:id="@+id/checkTransText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.checkSubText}"
+                tools:text="TextView" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnContinue2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/game_incorrect_button"
+                    android:onClick="@{self::onContinue}"
+                    android:text="@string/game_incorrect_continue"
+                    android:textColor="@color/black"
+                    android:visibility="@{!viewModel.isCorrect ? View.VISIBLE : View.INVISIBLE}" />
+
+                <Button
+                    android:id="@+id/btnContinue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/game_correct_button"
+                    android:onClick="@{self::onContinue}"
+                    android:text="@string/game_correct_continue"
+                    android:textColor="@color/black"
+                    android:visibility="@{viewModel.isCorrect ? View.VISIBLE : View.INVISIBLE}" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Thanh ngang trên cùng với nền màu vàng -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="412dp"
+        android:layout_height="168dp"
+        android:background="#FFEB3B"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/contentLayout"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <!-- Nội dung chính, gồm các trường nhập liệu -->
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_marginTop="80dp"
+        android:background="#E903A9F4"
+        android:padding="16dp">
+
+        <!-- Trường nhập mã và tên đăng nhập -->
+        <EditText
+            android:id="@+id/tvMaVaTenDN"
+            android:hint="Tên đăng nhập...."
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+
+        <!-- Trường nhập họ và tên -->
+        <EditText
+            android:id="@+id/edtMK"
+            android:hint="Mật khẩu..."
+            android:textStyle="bold"
+            android:textColor="#E91E63"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Trường nhập vai trò -->
+        <EditText
+            android:id="@+id/edtVaiTro"
+            android:hint="Vai trò...."
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#4CAF50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Renlative_gridView"
+    android:visibility="visible"
+    style="@style/ghi_chu"
+    android:orientation="horizontal">
+
+    <GridView
+        android:id="@+id/gv_ghichu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="#4d72ea"
+        android:numColumns="3"
+        android:layout_gravity="center_horizontal"
+         />
+</RelativeLayout>

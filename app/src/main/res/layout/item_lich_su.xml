@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Phần chứa thông tin và ảnh -->
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="143dp"
+        android:background="#CDDC39"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints">
+
+        <ScrollView
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            tools:ignore="MissingConstraints">
+            <!-- Phần văn bản thông tin -->
+            <LinearLayout
+                android:layout_width="285dp"
+                android:layout_height="119dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingEnd="8dp">
+
+                <TextView
+                    android:id="@+id/tvThoiGian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Thời gian"
+                    android:textColor="#3F51B5"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHanhDong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Hành động"
+                    android:textColor="#FF5722"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvChiTiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chi tiết"
+                    android:textColor="#673AB7"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+
+
+        <!-- Phần chứa ảnh -->
+        <ImageView
+            android:id="@+id/imgXoaLS"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Xóa lịch sử"
+            android:src="@drawable/delete"
+            app:tint="#D32F2F" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

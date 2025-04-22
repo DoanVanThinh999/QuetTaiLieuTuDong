@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_maps_home_work_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+    </group>
+    <item android:title="Đề thi">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/listening"
+                    android:icon="@drawable/baseline_hearing_24"
+                    android:title="Đề thi listening" />
+                <item
+                    android:id="@+id/speaking"
+                    android:icon="@drawable/noi"
+                    android:title="Đề thi speaking" />
+                <item
+                    android:id="@+id/reading"
+                    android:icon="@drawable/baseline_chrome_reader_mode_24"
+                    android:title="Đề thi reading" />
+                <item
+                    android:id="@+id/writing"
+                    android:icon="@drawable/baseline_edit_square_24"
+                    android:title="Đề thi writing" />
+            </group>
+        </menu>
+    </item>
+</menu>

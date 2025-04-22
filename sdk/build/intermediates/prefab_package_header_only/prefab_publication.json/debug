@@ -1,0 +1,17 @@
+{
+  "installationFolder": "C:\\Users\\Admin\\Documents\\A_oi_e_muon_ho_tro_phan_AI_a\\Bai_tap_lon_thi_cuoi_ky_de_9 (1) 2\\sdk\\build\\intermediates\\prefab_package\\debug\\prefab",
+  "gradlePath": ":sdk",
+  "packageInfo": {
+    "packageName": "sdk",
+    "packageSchemaVersion": 2,
+    "packageDependencies": [],
+    "modules": [
+      {
+        "moduleName": "opencv_jni_shared",
+        "moduleHeaders": "C:\\Users\\Admin\\Documents\\A_oi_e_muon_ho_tro_phan_AI_a\\Bai_tap_lon_thi_cuoi_ky_de_9 (1) 2\\sdk\\native\\jni\\include",
+        "moduleExportLibraries": [],
+        "abis": []
+      }
+    ]
+  }
+}

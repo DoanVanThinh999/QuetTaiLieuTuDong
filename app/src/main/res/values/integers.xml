@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="anim_flashcard_side_flip_time">200</integer>
+    <integer name="anim_flashcard_zoom_in_time">100</integer>
+    <!-- anim_flashcard_zoom_in_wait_time = anim_flashcard_side_flip_time * 2 - anim_flashcard_zoom_in_time -->
+    <integer name="anim_flashcard_zoom_in_wait_time">300</integer>
+    <integer name="game_unscramble_letter_swap_time">200</integer>
+    <integer name="game_unscramble_min_learned_words">5</integer>
+    <integer name="game_missing_letters_min_learned_words">10</integer>
+    <integer name="game_quiz_min_learned_words">30</integer>
+    <integer name="game_unscramble_min_length">2</integer>
+    <integer name="game_missing_letters_min_length">3</integer>
+</resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ChiTietThongTinTaiKhoanActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/InkhungDangKy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colordung"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvTenMH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Tên đăng nhập: "
+                android:textSize="12pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvGiaNhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Mật khẩu: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvGiaBan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Họ tên: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvTongBan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Email: "
+                android:textSize="9pt" />
+
+            <TextView
+                android:id="@+id/tvTongNhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Số điện thoại: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvHangTrongKho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Địa điểm: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvSoLuongTrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Trình độ: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvSoLuongTrungBay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Vai trò: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvSoLuongGiaoDich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Điểm nghe tích lũy: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvSoLuongGiaoDich1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Điểm nói tích lũy: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvSoLuongGiaoDich2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Điểm đọc tích lũy: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvSoLuongGiaoDich3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Điểm viết tích lũy: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvSoLuongGiaoDich4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Điểm trung bình tích lũy: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvSoLuongGiaoDich5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Điểm nghe gần đây: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvSoLuongGiaoDich6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Điểm nói gần đây: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvSoLuongGiaoDich7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Điểm đọc gần đây: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvSoLuongGiaoDich8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Điểm viết gần đây: "
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/tvSoLuongGiaoDich9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Điểm trung bình gần đây: "
+                android:textSize="12pt" />
+
+            <ImageView
+                android:id="@+id/imgThoat"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:contentDescription="Thoát"
+                android:src="@drawable/baseline_exit_to_app_24" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

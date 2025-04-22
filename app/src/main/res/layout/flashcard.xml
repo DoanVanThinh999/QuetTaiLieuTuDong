@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="entry"
+            type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.util.DictionaryEntry" />
+
+        <variable
+            name="listeners"
+            type="com.example.bai_tap_lon_thi_cuoi_ky_de_9.hoctienganh.app1.ui.dictionary.DictionaryListItem" />
+
+        <variable
+            name="isFavorited"
+            type="boolean" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="@{listeners::toggleDetails}">
+
+        <include
+            android:id="@+id/card_back"
+            layout="@layout/flashcard_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            bind:listeners="@{listeners}"
+            bind:entry="@{entry}"
+            bind:isFavorited="@{isFavorited}" />
+
+        <include
+            android:id="@+id/card_front"
+            layout="@layout/flashcard_front"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            bind:listeners="@{listeners}"
+            bind:entry="@{entry}"
+            bind:isFavorited="@{isFavorited}" />
+    </FrameLayout>
+</layout>

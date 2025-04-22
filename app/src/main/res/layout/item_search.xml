@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/iconSearch"
+        android:layout_width="35dp"
+        android:background="@drawable/searchview"
+        android:layout_height="35dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/itemSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:textColor="#33CC33" />
+         />
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#e5e5"
+tools:context=".phienbanvip.TraTu.Search_tran">
+
+<!-- Header layout with background and elevation -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tu_dien"
+    android:elevation="4dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <!-- Container for text and list -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <!-- Greeting TextView -->
+        <TextView
+            android:id="@+id/tvTaiKhoanKH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="start"
+            android:text="Xin chào, ..."
+            android:textColor="#4CAF50"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:ems="10"
+            android:lines="5"
+            android:padding="8pt"
+            android:background="#DA2196F3"
+            android:imeOptions="actionGo"
+            android:hint="Nhập từ cần tra...."
+            android:textColor="#545454"
+            android:textColorHint="#4b4b4b"
+            android:id="@+id/edtSearch" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+            <ListView
+                android:layout_width="match_parent"
+                android:padding="5pt"
+                android:drawSelectorOnTop="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/lv"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

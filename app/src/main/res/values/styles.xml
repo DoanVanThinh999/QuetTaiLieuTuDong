@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ToolbarTitleStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textStyle">bold</item> <!-- Chữ đậm -->
+        <item name="android:textColor">@android:color/holo_red_dark</item> <!-- Màu xanh lá -->
+        <item name="android:textSize">20sp</item> <!-- Kích thước chữ -->
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="ghi_chu" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

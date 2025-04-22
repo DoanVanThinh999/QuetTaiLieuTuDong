@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender">#8692f7</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="flashcard_back_speak_500">#8BC34A</color>
+    <color name="flashcard_back_speak_loading">#C0C0C0</color>
+    <color name="flashcard_back_speak_pause_500">#F44336</color>
+    <color name="flashcard_front">#03A9F4</color> <!-- 500 -->
+    <color name="flashcard_front_secondary">#B3E5FC</color> <!-- 100 -->
+    <color name="header">#8BC34A</color> <!-- 500 -->
+    <color name="item_compact_details">@color/game_bg</color>
+    <color name="game_letter_500">#03A9F4</color>
+    <color name="game_letter_selected_300">#4FC3F7</color>
+    <color name="heart_500">#F44336</color>
+    <color name="game_bg">#E0E0E0</color>
+    <color name="game_clicked_bg">#A0A0A0</color>
+    <color name="game_correct_500">#8BC34A</color>
+    <color name="game_correct_pressed_800">#558B2F</color>
+    <color name="game_neutral_500">#FFC107</color>
+    <color name="game_incorrect_500">#F44336</color>
+    <color name="game_incorrect_pressed_800">#C62828</color>
+    <color name="game_warning">#FFEB3B</color> <!-- 500 -->
+    <color name="game_finished_btn_500">#03A9F4</color>
+    <color name="game_finished_title_500">#FFC107</color>
+    <color name="game_finished_xp_500">#FFC107</color>
+    <color name="game_finished_time_500">#03A9F4</color>
+    <color name="game_finished_accuracy_500">#8BC34A</color>
+    <color name="game_btn_disabled">#A0A0A0</color>
+    <color name="game_btn_close">#C0C0C0</color>
+    <color name="game_btn_2">@color/game_correct_500</color>
+    <color name="game_letter_hint_500">#FFC107</color>
+    <color name="game_letter_inputted_500">#FFC107</color>
+
+    <color name="colorSecondary">#4CAF50</color>
+    <color name="light_gray">#F5F5F5</color>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorSelect">#ff0000</color>
+    <color name="colordung">#33CC33</color>
+    <color name="defaultColor">#000000</color> <!-- Màu đen -->
+</resources>
